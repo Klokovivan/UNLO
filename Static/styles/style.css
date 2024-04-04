@@ -10,13 +10,13 @@ body {
 
 .header {
     background-color: #121212;
-    height: 100vh;
+    height: 15vh;
     background-size: cover;
 }
 
 .header-line {
     padding-top: 30px;
-    display: flex;
+    display:flex;
     align-items: center;
 }
 
@@ -31,3 +31,18 @@ body {
     drop-shadow(0px 0px 8px #ffffff87);
 }
 
+
+
+.calendar-0 {
+    background-color: #121212;
+    height: 50vh;
+}
+
+.shepe {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #e0e5e5;
+    border-radius: 10px;
+    width: 1018px;
+    height: 291px;
+    margin: 0px 166px;
+}
