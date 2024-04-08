@@ -1,59 +1,74 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Окно входа</title>
-<style>
-  body { font-family: Arial, sans-serif; background-color: #000000; color: #333; }
-  .login-box { background: #fffefe; padding: 50px; margin: 50px auto; width: 300px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); border-radius: 10px; }
-  .login-box h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
-  .login-box input[type="text"],
-  .login-box input[type="password"] { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; }
-  .login-box button { width: 100%; padding: 10px; border: none; background: #000000; color: white; cursor: pointer; margin-bottom: 10px; border-radius: 5px; }
-  .login-box label { display: inline-block; margin-bottom: 10px; }
-  .login-box input[type="checkbox"] { margin-right: 5px; }
-  .fine-print { font-size: 12px; margin-top: 10px; }
-
-  .icon { 
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            background-color: #4CAF50; 
-            border-radius: 50%; 
-            text-align: center;
-            line-height: 20px;
-            margin-right: 10px; 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Авторизация</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: black; 
+            color: rgb(3, 3, 3); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
         } 
-</style>
-</head>
-<body>
-
-<div class="login-box">
-  
-  
-  <button>МойСклад</button>
-  <button>1С:Бухгалтерия</button>
-
-  <form>
-    <input type="text" id="login" name="login" placeholder="Логин МойСклад"><br><br>
-    
-    <input type="password" id="password" name="password" placeholder="Пароль МойСклад"><br><br>
-    
-    <input type="checkbox" id="remember" name="remember">
-    <label for="remember">Сохранить данные</label><br><br>
-    
-    <input type="submit" value="Подключить">
-</form><br>
-    
-    
-</span> 
-<p style="font-size: 12px;"><span class="icon">✔️</span> Данные аккаунта "МойСклад" подключены успешно</p> 
-<p style="font-size: 12px;"><span class="icon">✔️</span> Данный аккаунта "1С:Бухгалтерия" подключены успешно</p> 
-<p style="font-size: 12px;"><span class="icon">✔️</span> Синхронизация успешна, перейдите к настройке приложения</p> 
-
-  </form>
-</div>
-
-</body>
+         
+        .login-container { 
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        } 
+         
+        .login-input { 
+            width: 100%; 
+            margin-bottom: 10px; 
+            padding: 8px; 
+            border: 1px solid #ccc; 
+            border-radius: 3px; 
+        } 
+         
+        .login-button { 
+            width: 100%; 
+            padding: 8px; 
+            background-color: #000000; 
+            color: white; 
+            border: none; 
+            border-radius: 3px; 
+            cursor: pointer; 
+        } 
+        .small-text { 
+            font-size: 12px; 
+            margin-top: 10px; 
+            color: black; 
+        } 
+        .icon { 
+            display: inline-block; 
+            width: 20px; 
+            height: 20px; 
+            background-color: #4CAF50;  
+            border-radius: 50%;  
+            text-align: center; 
+            line-height: 20px; 
+            margin-right: 10px;  
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="login-container"> 
+        <h2>Авторизация в МойСклад и 1С Бухгалтерия</h2> 
+        <h3>МойСклад</h3> 
+        <input type="text" class="login-input" placeholder="Логин МойСклад"> 
+        <input type="password" class="login-input" placeholder="Пароль МойСклад"> 
+        <h3>1С Бухгалтерия</h3> 
+        <input type="text" class="login-input" placeholder="Логин 1С:Бухгалтерия"> 
+        <input type="password" class="login-input" placeholder="Пароль 1С:Бухгалтерия"> 
+        <button class="login-button">Подключить</button> 
+        
+        </span> 
+        <p class="small-text"><span class="icon">✔️</span> Данные аккаунта "МойСклад" подключены успешно</p> 
+        <p class="small-text"><span class="icon">✔️</span> Данный аккаунта "1С:Бухгалтерия" подключены успешно</p> 
+        <p class="small-text"><span class="icon">✔️</span> Синхронизация успешна, перейдите к настройке приложения</p> 
+</body> 
 </html>
