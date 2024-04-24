@@ -56,17 +56,9 @@
                     
                     
                     <div class="files">
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>          
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
-                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        {% for item in items %}
+                        <p style="word-spacing: 190px">{{item.name}} {{item.size}} {{item.date}}</p>  
+                        {% endfor %}
 
                     </div>
                     

@@ -13,7 +13,52 @@ def abc(request):
 
 def meow(request): 
     
-    return render(request, 'meow.html')
+    return render(request, 'meow.html', {
+        'items': [
+            {
+                'name': 'sl,al,;,sa;lld,dlf',
+                'size': '2mb',
+                'date': '24.04.2024'
+            },
+            {
+                'name': 'sl,al,;,sa;lld,dlf',
+                'size': '2mb',
+                'date': '24.04.2024'
+            },
+            {
+                'name': 'sl,al,;,sa;lld,dlf',
+                'size': '2mb',
+                'date': '24.04.2024'
+            },
+            {
+                'name': 'sl,al,;,sa;lld,dlf',
+                'size': '2mb',
+                'date': '24.04.2024'
+            },
+            {
+                'name': 'sl,al,;,sa;lld,dlf',
+                'size': '2mb',
+                'date': '24.04.2024'
+            },
+            {
+                'name': 'sl,al,;,sa;lld,dlf',
+                'size': '2mb',
+                'date': '24.04.2024'
+            },
+            {
+                'name': 'sl,al,;,sa;lld,dlf',
+                'size': '2mb',
+                'date': '24.04.2024'
+            },
+            {
+                'name': 'sl,al,;,sa;lld,dlf',
+                'size': '2mb',
+                'date': '24.04.2024'
+            },
+        ]
+    })
+
+
 
 #HttpResponse('')
 
