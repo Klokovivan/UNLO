@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"> 
     
     <title>UNLO</title>
-    <link rel="stylesheet" href="static/core/meow.css">
+    <link rel="stylesheet" href="/static/core/meow.css">
 </head>
 <body>
     <div class="header">
@@ -16,37 +17,39 @@
             <div class="header-1">
                 <div class="container">
                     <div class="header-logo">
-                        <img src="static/core/logo.svg" alt=""> 
+                        <img src="/static/core/logo.svg" alt=""> 
                     </div> 
-                    <div class="home-icon">
-                        <a href="#">
-                        <img class="home-card" src="static/core/Home.svg" alt="">
-                        </a>
+                    <div class="home">
+                        <a href="/accounts/login/" class="home-icon">Выйти из аккаунтов</a>
                     </div>
+                    <a href="/accounts/">
+                            <button type="button" class="user"><img src="/static/core/user.svg" alt=""></button>
+                    </a>
+                    
                     
                     <div class="calendar">
                         <div class="text-over-calendar">Выберите дни недели для автоматической передачи файлов</div>
                         
                         <a href='#'>
-                            <button type="button" class="buttons btn11">ПН<img src="static/core/oblako.svg" alt=""></button>
+                            <button type="button" class="buttons btn11">ПН<img src="/static/core/oblako.svg" alt=""></button>
                         </a>
                         <a href='#'>
-                            <button type="button" class="buttons btn12">ВТ<img src="static/core/oblako.svg" alt=""></button>   
+                            <button type="button" class="buttons btn12">ВТ<img src="/static/core/oblako.svg" alt=""></button>   
                         </a>
                         <a href='#'>
-                            <button type="button" class="buttons btn13">СР<img src="static/core/oblako.svg" alt=""></button>
+                            <button type="button" class="buttons btn13">СР<img src="/static/core/oblako.svg" alt=""></button>
                         </a>
                         <a href='#'>
-                            <button type="button" class="buttons btn14">ЧТ<img src="static/core/oblako.svg" alt=""></button>   
+                            <button type="button" class="buttons btn14">ЧТ<img src="/static/core/oblako.svg" alt=""></button>   
                         </a>
                         <a href='#'>
-                            <button type="button" class="buttons btn15">ПТ<img src="static/core/oblako.svg" alt=""></button>
+                            <button type="button" class="buttons btn15">ПТ<img src="/static/core/oblako.svg" alt=""></button>
                         </a>
                         <a href='#'>
-                            <button type="button" class="buttons btn16">СБ<img src="static/core/oblako.svg" alt=""></button>   
+                            <button type="button" class="buttons btn16">СБ<img src="/static/core/oblako.svg" alt=""></button>   
                         </a>
                         <a href='#'>
-                            <button type="button" class="buttons btn17">ВС<img src="static/core/oblako.svg" alt=""></button>
+                            <button type="button" class="buttons btn17">ВС<img src="/static/core/oblako.svg" alt=""></button>
                         </a>
                         <label>
                             <input type="checkbox" id="save-settings">
@@ -56,59 +59,73 @@
                     
                     
                     <div class="files">
-                        {% for item in items %}
-                        <p style="word-spacing: 190px">{{item.name}} {{item.size}} {{item.date}}</p>  
-                        {% endfor %}
-
-                    </div>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>          
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p>
+                        <p style="word-spacing: 190px">dahshd123123sadas.word 1mb 29.03.2024</p></div>
                     
-                    <div class="clock"> 
-                        
-                            <div class="custom-time-picker">
-                                <select id="hours">
-                                <option value="00">00</option>
-                                <option value="01">01</option>
-                                <option value="01">02</option>
-                                <option value="01">03</option>
-                                <option value="01">04</option>
-                                <option value="01">05</option>
-                                <option value="01">06</option>
-                                <option value="01">07</option>
-                                <option value="01">08</option>
-                                <option value="01">09</option>
-                                <option value="01">10</option>
-                                <option value="01">11</option>
-                                <option value="01">12</option>
-                                <option value="01">13</option>
-                                <option value="01">14</option>
-                                <option value="01">15</option>
-                                <option value="01">16</option>
-                                <option value="01">17</option>
-                                <option value="01">18</option>
-                                <option value="01">19</option>
-                                <option value="01">20</option>
-                                <option value="01">21</option>
-                                <option value="01">22</option>
-                                <option value="01">23</option>
-                                </select>
-                                :
-                                <select id="minutes">
-                                <option value="00">00</option>
-                                <option value="15">15</option>
-                                <option value="30">30</option>
-                                <option value="45">45</option>
-                                </select>
-                            </div> 
+                        <div class="clock"> 
+                            
+                                <div class="custom-time-picker">
+                                    <select id="hours">
+                                    <option value="00">00</option>
+                                    <option value="01">01</option>
+                                    <option value="01">02</option>
+                                    <option value="01">03</option>
+                                    <option value="01">04</option>
+                                    <option value="01">05</option>
+                                    <option value="01">06</option>
+                                    <option value="01">07</option>
+                                    <option value="01">08</option>
+                                    <option value="01">09</option>
+                                    <option value="01">10</option>
+                                    <option value="01">11</option>
+                                    <option value="01">12</option>
+                                    <option value="01">13</option>
+                                    <option value="01">14</option>
+                                    <option value="01">15</option>
+                                    <option value="01">16</option>
+                                    <option value="01">17</option>
+                                    <option value="01">18</option>
+                                    <option value="01">19</option>
+                                    <option value="01">20</option>
+                                    <option value="01">21</option>
+                                    <option value="01">22</option>
+                                    <option value="01">23</option>
+                                    </select>
+                                    :
+                                    <select id="minutes">
+                                    <option value="00">00</option>
+                                    <option value="15">05</option>
+                                    <option value="30">10</option>
+                                    <option value="45">15</option>
+                                    <option value="45">20</option>
+                                    <option value="45">25</option>
+                                    <option value="45">30</option>
+                                    <option value="45">35</option>
+                                    <option value="45">40</option>
+                                    <option value="45">45</option>
+                                    <option value="45">50</option>
+                                    <option value="45">55</option>
+                                    </select>
+                                </div> 
+                        </div>
+                        <div class="text-over-clock">Выберите время для автоматической передачи файлов</div>
+                        <a href='#'>
+                            <button type="button" class="btn btn1">Ручная выгрузка</button>
+                        </a>
+                        <a href='#'>
+                            <button type="button" class="btn btn2">Автоматическая выгрузка</button>   
+                        </a>
                     </div>
-                    <div class="text-over-clock">Выберите время для автоматической передачи файлов</div>
-                    <a href='#'>
-                        <button type="button" class="btn btn1">Ручная выгрузка</button>
-                    </a>
-                    <a href='#'>
-                        <button type="button" class="btn btn2">Автоматическая выгрузка</button>   
-                    </a>
                 </div>
-            </div>
-        </div>        
-    </div>
-</body>
+            </div>        
+        </div>
+    </body>
